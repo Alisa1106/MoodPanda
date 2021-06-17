@@ -7,12 +7,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import steps.MyDiarySteps;
 import steps.RateYourHappinessModalSteps;
-import utils.ScreenshotTestListener;
+import utils.TestListener;
 
 import static com.codeborne.selenide.WebDriverRunner.driver;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-@Listeners({ScreenshotTestListener.class})
+@Listeners({TestListener.class})
 public class BaseTest {
 
     RateYourHappinessModalSteps rateYourHappinessModalSteps;
